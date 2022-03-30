@@ -2,7 +2,7 @@
  *
  * @author Henk Beula
  */
-public class BinaryOperations {
+public class ConversaoNumerica {
 
     public static String addition(long bin1, long bin2){
         // Add two binary numbers
