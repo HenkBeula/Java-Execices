@@ -1,4 +1,6 @@
 public class Main{
+    //solution for some exercises 
+    
     public static String move2end(java.lang.String str, java.lang.Integer n) {
         if(str.length()<3)
             return str;
