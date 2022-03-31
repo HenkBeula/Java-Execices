@@ -171,4 +171,9 @@ public class Main{
     public static boolean lessThan10(int n){
         return (n < 10) ? true: false;
     }
+    
+    //Return true if s does not contains the char 'a'
+    public static boolean notContainsA(String s) {
+        return !s.contains("a");
+    }
 }
