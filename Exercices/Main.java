@@ -204,11 +204,17 @@ public class Main{
     }      */
 
     public static boolean isAlpha(String s){
-        char [] chars = s.toCharArray();
-        for (int i = 0; i < chars.length-1; i++) {
-            if(chars[i]>chars[i+1])
+        for (int i = 0; i < s.length()-1; i++) {
+            if(s.charAt(i)>s.charAt(i+1))
                 return false;
         }
+        return true;
+    }
+    
+    public static boolean notContainsXY(String s, char c1, char c2){
+        for (int i = 0; i < s.length()-1; i++)
+            if(s.charAt(i)==c1 && c2==s.charAt(i+1))
+                return false;
         return true;
     }
 }
