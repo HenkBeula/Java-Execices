@@ -176,4 +176,39 @@ public class Main{
     public static boolean notContainsA(String s) {
         return !s.contains("a");
     }
+    
+        /*public static boolean isAlpha(String s){
+        String [][] dictionary = {{"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"}, 
+                                  {"1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26",}};
+        int [] coresp = new int[s.length()*2];
+        int j=0, controler=0;
+        for (int i = 0; i < s.length(); i++) {
+            for (int col = 0; col < 26; col++) {
+                if(s.charAt(i)==dictionary[0][col].charAt(0)){
+                    coresp[j++] = Integer.valueOf(dictionary[1][col]);
+                    controler++;
+                }
+            }
+        }
+
+        for (int i = 0; i < controler-1; i++) {
+            System.out.println(coresp[i] + " " + coresp[i+1]);
+            if(coresp[i]<=coresp[i+1]){
+                
+                continue;
+            }
+            else
+              return false;
+        }
+           return true;
+    }      */
+
+    public static boolean isAlpha(String s){
+        char [] chars = s.toCharArray();
+        for (int i = 0; i < chars.length-1; i++) {
+            if(chars[i]>chars[i+1])
+                return false;
+        }
+        return true;
+    }
 }
