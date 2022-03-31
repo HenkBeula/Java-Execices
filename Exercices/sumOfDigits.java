@@ -4,8 +4,7 @@ You may assume that the parameter will be non-negative.
 
 Examples:
 
-sumOfDigits(0) => 0
-*/
+sumOfDigits(0) => 0 */
 
 public static int sumOfDigits(int n) {
   if(n == 0) {
