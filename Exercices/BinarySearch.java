@@ -18,6 +18,13 @@ Otherwise, it must occur to the right of the middle element. A recursive call ca
 */
 public static int binarySearch(int[] arr, int searchVal, int start, int end) {
   int middle = (start+end)/2;
+  
+  //This piece of code avoids getting java.lang.ArrayOutOfBoundsException
+  //if you initialize end parameter with a value that is greater than arrays length
+  //********************************
+  /**/if(middle>=arr.length)
+  /**/          middle=arr.length-1;
+  //*********************************
 
   if(arr[middle] == searchVal)
     return middle;
