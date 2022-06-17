@@ -13,6 +13,6 @@ public class BubbleSort {
                   ordered=false;
                }
             }
-        } while(ordered==false);  
+        } while(!ordered);  
     }
 }
