@@ -5,8 +5,10 @@ public class ErastosteneS_Crivo {
         int N=Integer.parseInt(JOptionPane.showInputDialog("Enter a number"));
         int raiz= (int) Math.sqrt(N);
         boolean Array[]=new boolean[N];
+        
         System.out.print("Crivo de Erastostenes"+"\n");
         System.out.print("--For an array of length "+N+"\n"+"--The primes are:");
+        
         /*Percore o array e inicializa todas
         as posicoes com o valor true*/
         for(int i=2;i<Array.length;i++){
